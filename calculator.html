@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Free calculator everyone can use">
+        <meta name="keywords" content="calculator, free, online">
+        <meta name="author" content="Nathan">
+        <title>Calculator Nathan</title>
+    </head>
+    <body style="background-color: black;">
+     
+        
+
+
+
+
+    <input 
+        class=
+            "input1" 
+        type=
+            "number" 
+
+        placeholder="Number 1 here"
+
+        style=
+            "width: 650px; 
+             height: 100px;
+             margin-left: 10px;
+             font-size: 50px;"
+            >
+            <input 
+            class=
+                "input2" 
+            type=
+                "number" 
+
+            placeholder="Number 2 here"
+
+            style=
+            "width: 650px; 
+            height: 100px;
+            margin-left: 10px;
+            font-size: 50px;">
+
+    <button 
+        onclick=
+            "symbol = '+'" 
+        style=
+            "margin-top: 10px;
+            margin-left: 25px;
+            background-color: yellow;
+            font-size: 400px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            border-color: orange;
+            border-style: solid;"
+             
+    >+</button>
+    <button 
+        onclick=
+            "symbol = '-'" 
+            style=
+            "margin-top: 10px;
+            margin-left: 25px;
+            background-color: yellow;
+            font-size: 400px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            border-color: orange;
+            border-style: solid;"  
+    >-</button>
+    
+    <button 
+        onclick=
+            "symbol = '/'"
+        style = "margin-top: 10px;
+                margin-left: 25px;
+                background-color: yellow;
+                font-size: 400px;
+                padding-right: 50px;
+                padding-left: 50px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-radius: 10px;
+                border-color: orange;
+                border-style: solid;"
+    >&#247;</button>
+    <button 
+        onclick=
+            "symbol = '*'"
+            style=
+                "margin-top: 10px;
+                margin-left: 25px;
+                background-color: yellow;
+                font-size: 400px;
+                padding-right: 50px;
+                padding-left: 50px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-radius: 10px;
+                border-color: orange;
+                border-style: solid;"
+            >x</button>
+
+            
+
+
+
+            <button 
+            onclick=
+                "doMath(symbol);" 
+            style=
+                "margin-top: 20px;
+                margin-left: 25px;
+                background-color: yellow;
+                font-size: 110px;
+                padding-right: 290px;
+                padding-left: 290px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                border-color: orange;
+                border-style: solid;
+                " 
+                 
+        >=</button>
+    
+
+        <div 
+            class=
+                "container"
+            style=
+                "margin-top: 20px;
+                margin-left: 5px;
+                background-color: yellow;
+                font-size: 106px;
+                padding-right: 290px;
+                padding-left: 290px;
+                padding-top: 15px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                border-color: orange;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;"
+                
+        >0</div>
+    
+        <script>
+            /*
+            i am a cheese cake 
+            */
+
+            const num1 = document.querySelector('.input1')
+
+            const num2 = document.querySelector('.input2')
+
+            const holder = document.querySelector('.container')
+
+            let symbol = ''
+
+            
+            function doMath (middle) {
+            if (symbol === '+') {
+            
+            holder.textContent = Number(num1.value) + Number(num2.value)
+
+            }if (symbol === '-') {
+            
+            holder.textContent = Number(num1.value) - Number(num2.value)
+
+            }if (symbol === '*') {
+            
+            holder.textContent = Number(num1.value) * Number(num2.value)
+
+            }if (symbol === '/') {
+            
+            holder.textContent = Number(num1.value) / Number(num2.value)
+
+            }
+            }
+
+
+
+
+        </script>
+        
+    </body>
+</html>
